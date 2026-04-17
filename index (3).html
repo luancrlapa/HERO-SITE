@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Suprimentos</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+:root { --vermelho:#dc2626; }
+
+.fade-up {
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+.fade-up.active {
+opacity:1;
+transform:translateY(0);
+}
+
+.delay-1 {transition-delay:.2s;}
+.delay-2 {transition-delay:.4s;}
+.delay-3 {transition-delay:.6s;}
+
+.card-hover {
+transition:all .3s ease;
+}
+.card-hover:hover {
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.logo-box {
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: 0.3s;
+}
+
+.logo:hover { transform: scale(1.05); }
+
+.logo.mrs { transform: scale(0.85); }
+.logo.vli { transform: scale(0.95); }
+.logo.pifpaf { transform: scale(0.75); }
+.logo.petrobras { transform: scale(0.9); }
+.logo.fiat { transform: scale(0.85); }
+.logo.vale { transform: scale(1); }
+.logo.wabtec { transform: scale(0.9); }
+.logo.vallourec { transform: scale(0.9); }
+.logo.mosaic { transform: scale(0.85); }
+.logo.tupi { transform: scale(0.85); }
+
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-black text-white px-8 py-4 flex justify-between items-center">
+<img src="imagens/LOGO_HERO.png" class="h-12">
+
+<nav class="flex gap-6 text-sm">
+<a href="#" class="hover:text-red-500">Home</a>
+<a href="contato.html" class="hover:text-red-500">Contato</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="h-screen flex items-center justify-center text-white relative">
+
+<div class="absolute inset-0">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/75"></div>
+</div>
+
+<div class="relative z-10 max-w-4xl text-center px-6">
+
+<h1 class="text-5xl font-bold mb-6 fade-up">
+Soluções industriais com agilidade, segurança e eficiência
+</h1>
+
+<p class="text-lg text-gray-200 mb-8 fade-up delay-1">
+Conectamos indústrias a fornecedores, viabilizando compras complexas de forma rápida, confiável e sem burocracia desnecessária. 
+</p>
+
+<a href="https://wa.me/5531971976444?text=Olá! Estou entrando em contato através do site da Hero Suprimentos"
+class="bg-red-600 px-10 py-4 rounded font-semibold hover:bg-red-700 transition fade-up delay-2">
+Falar com Especialista
+</a>
+
+</div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="py-16 bg-gray-100 text-center">
+<h2 class="text-3xl font-bold mb-10 fade-up">Por que escolher a Hero Suprimentos?</h2>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+
+<div class="bg-white p-6 rounded shadow card-hover fade-up delay-1">
+<h3 class="font-bold text-red-600 mb-2">Para empresas que não podem parar</h3>
+<p>Agilidade em demandas críticas</p>
+</div>
+
+<div class="bg-white p-6 rounded shadow card-hover fade-up delay-2">
+<h3 class="font-bold text-red-600 mb-2">Flexibilidade de Condições</h3>
+<p>Capacidade de equalização técnica e comercial</p>
+</div>
+
+<div class="bg-white p-6 rounded shadow card-hover fade-up delay-3">
+<h3 class="font-bold text-red-600 mb-2">Redução de riscos operacionais</h3>
+<p>Execução eficiente em cenários complexos</p>
+</div>
+
+</div>
+</section>
+
+<!-- CLIENTES -->
+<section class="py-16 text-center">
+<h2 class="text-3xl font-bold mb-10 fade-up">Atuação recorrente junto a grandes operações industriais</h2>
+
+<div class="flex justify-center gap-8 flex-wrap">
+
+<div class="logo-box"><img src="imagens/mrs.png" class="logo mrs"></div>
+<div class="logo-box"><img src="imagens/vli.png" class="logo vli"></div>
+<div class="logo-box"><img src="imagens/pifpaf.png" class="logo pifpaf"></div>
+<div class="logo-box"><img src="imagens/petrobras.png" class="logo petrobras"></div>
+<div class="logo-box"><img src="imagens/fiat.png" class="logo fiat"></div>
+<div class="logo-box"><img src="imagens/vale.png" class="logo vale"></div>
+<div class="logo-box"><img src="imagens/wabtec.png" class="logo wabtec"></div>
+<div class="logo-box"><img src="imagens/vallourec.png" class="logo vallourec"></div>
+<div class="logo-box"><img src="imagens/mosaic.png" class="logo mosaic"></div>
+<div class="logo-box"><img src="imagens/cimentotupi.png" class="logo tupi"></div>
+
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="py-20 bg-black text-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-14 fade-up">
+      Um processo simples para resolver problemas complexos
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="border-l-2 border-red-600 pl-6 fade-up delay-1">
+        <h3 class="font-bold text-red-500">1. Entendimento da demanda</h3>
+        <p class="text-gray-300">Análise técnica e operacional da necessidade</p>
+      </div>
+
+      <div class="border-l-2 border-red-600 pl-6 fade-up delay-2">
+        <h3 class="font-bold text-red-500">2. Estruturação da solução</h3>
+        <p class="text-gray-300">Validação técnica e definição da abordagem mais adequada</p>
+      </div>
+
+      <div class="border-l-2 border-red-600 pl-6 fade-up delay-3">
+        <h3 class="font-bold text-red-500">3. Conexão com fornecedores</h3>
+        <p class="text-gray-300">Identificação e equalização das melhores alternativas disponíveis</p>
+      </div>
+
+      <div class="border-l-2 border-red-600 pl-6 fade-up delay-1">
+        <h3 class="font-bold text-red-500">4. Definição da melhor condição</h3>
+        <p class="text-gray-300">Equilíbrio entre custo, prazo, qualidade e viabilidade</p>
+      </div>
+
+      <div class="border-l-2 border-red-600 pl-6 fade-up delay-2">
+        <h3 class="font-bold text-red-500">5. Acompanhamento logístico</h3>
+        <p class="text-gray-300">Monitoramento contínuo até a entrega</p>
+      </div>
+
+      <div class="border-l-2 border-red-600 pl-6 fade-up delay-3">
+        <h3 class="font-bold text-red-500">6. Entrega e suporte</h3>
+        <p class="text-gray-300">Garantia de conformidade e suporte pós-fornecimento</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section id="solucoes" class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12 fade-up">
+      Áreas de Atuação
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-8 rounded-xl shadow-lg card-hover fade-up delay-1 h-full">
+        <h3 class="font-bold text-red-600 mb-4 text-lg">Qualidade do ar industrial</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Soluções voltadas à segurança, conformidade e eficiência operacional</li>
+          <li>• Sistemas de ventilação industrial</li>
+          <li>• Exaustão e controle de gases</li>
+          <li>• Controle térmico de ambientes</li>
+          <li>• Aplicações para áreas críticas</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-lg card-hover fade-up delay-2 h-full">
+        <h3 class="font-bold text-red-600 mb-4 text-lg">Suprimentos Industriais</h3>
+        <p class="mb-4 text-gray-600">
+          Fornecimento completo para operações industriais:
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Equipamentos industriais</li>
+          <li>• Peças e componentes</li>
+          <li>• Itens sob demanda</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-lg card-hover fade-up delay-3 h-full">
+        <h3 class="font-bold text-red-600 mb-4 text-lg">Demandas críticas</h3>
+        <p class="mb-4 text-gray-600">
+          Atuação em cenários de alta urgência e impacto operacional:
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Paradas de operação</li>
+          <li>• Manutenções emergenciais</li>
+          <li>• Situações críticas de continuidade</li>
+          <li>• Projetos personalizados sob demanda</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE + FLUXO -->
+<section class="bg-gray-100 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-up">
+      Mais do que fornecedores, parceiros da indústria
+    </h2>
+
+    <div class="relative">
+
+      <div class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-red-600 transform -translate-x-1/2"></div>
+
+      <div class="md:grid md:grid-cols-2 gap-8 items-center mb-12 fade-up">
+        <div class="md:text-right">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Propósito</h3>
+          <p class="text-gray-600">
+            Fundada em 2012, a Hero Suprimentos nasceu para resolver problemas reais da indústria, com foco em agilidade e eficiência operacional.
+          </p>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="md:grid md:grid-cols-2 gap-8 items-center mb-12 fade-up delay-1">
+        <div></div>
+        <div>
+          <h3 class="text-xl font-bold text-red-600 mb-2">Atuação Estratégica</h3>
+          <p class="text-gray-600">
+            Conectamos demanda, fornecedores e logística de forma estruturada, garantindo fluidez e controle em cada processo.
+          </p>
+        </div>
+      </div>
+
+      <div class="md:grid md:grid-cols-2 gap-8 items-center mb-12 fade-up delay-2">
+        <div class="md:text-right">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Experiência</h3>
+          <p class="text-gray-600">
+            Atuamos em ambientes industriais complexos, entendendo riscos, prazos e impacto direto na operação.
+          </p>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="md:grid md:grid-cols-2 gap-8 items-center fade-up delay-3">
+        <div></div>
+        <div>
+          <h3 class="text-xl font-bold text-red-600 mb-2">Compromisso</h3>
+          <p class="text-gray-600">
+            Garantimos agilidade, confiabilidade e execução de excelência.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="bg-black py-20 text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-up">
+      Fale com a Hero Suprimentos
+    </h2>
+
+    <p class="mb-8 text-lg text-gray-300 fade-up delay-1">
+      Precisa resolver uma demanda industrial com rapidez e segurança?
+    </p>
+
+  <a href="https://wa.me/5531971976444?text=Olá! Estou entrando em contato através do site da Hero Suprimentos" target="_blank" 
+class="inline-block bg-red-600 text-white font-semibold px-10 py-4 rounded-lg shadow-lg hover:scale-110 hover:bg-red-700 transition fade-up delay-2">
+Solicitar atendimento
+</a>
+
+</div>
+</section>
+
+<!-- NOTÍCIAS -->
+<section class="py-16 px-6">
+<h2 class="text-3xl font-bold text-center mb-10 fade-up">Notícias da Indústria</h2>
+<div id="news" class="grid md:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- WHATS -->
+<a href="https://wa.me/5531971976444?text=Olá! Estou entrando em contato através do site da Hero Suprimentos"
+class="fixed bottom-6 right-6 animate-bounce">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-14">
+</a>
+
+<!-- SCRIPT BACKEND -->
+<script>
+let noticias = [];
+
+async function carregarNoticias() {
+  const container = document.getElementById("news");
+
+  container.innerHTML = "Carregando notícias...";
+
+  try {
+    // 🔥 PRIMEIRO: API via Netlify Function (SEM CORS)
+    const response = await fetch("/.netlify/functions/news");
+    const data = await response.json();
+
+    noticias = data.articles || [];
+
+    // 🔥 COMPLEMENTO (outras empresas - API direta opcional)
+    if (noticias.length < 3) {
+      const restante = await fetch(
+        "https://gnews.io/api/v4/search?q=Fiat OR VLI OR Wabtec OR Vallourec OR Mosaic&lang=pt&country=br&max=3&apikey=79e458a3991167919464b909605602a0"
+      );
+
+      const dadosRestante = await restante.json();
+      const outras = dadosRestante.articles || [];
+
+      outras.forEach(n => {
+        if (
+          noticias.length < 3 &&
+          !noticias.find(x => x.title === n.title)
+        ) {
+          noticias.push(n);
+        }
+      });
+    }
+
+    noticias = noticias.slice(0, 3);
+
+    if (noticias.length === 0) {
+      container.innerHTML = "Nenhuma notícia encontrada.";
+      return;
+    }
+
+    container.innerHTML = "";
+
+    noticias.forEach(n => {
+      container.innerHTML += `
+        <div class="bg-white rounded shadow overflow-hidden card-hover fade-up">
+          <img src="${n.image || 'https://via.placeholder.com/400'}" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold">${n.title}</h3>
+            <a href="${n.url}" target="_blank" class="text-red-600">Ler mais</a>
+          </div>
+        </div>
+      `;
+    });
+
+    ativarAnimacao();
+
+  } catch (e) {
+    container.innerHTML = "Erro ao carregar notícias";
+    console.error("ERRO REAL:", e);
+  }
+}
+
+function ativarAnimacao() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("active");
+      }
+    });
+  });
+
+  document.querySelectorAll(".fade-up").forEach(el => {
+    observer.observe(el);
+  });
+}
+
+window.addEventListener("DOMContentLoaded", carregarNoticias);
+</script>

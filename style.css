@@ -1,0 +1,128 @@
+<style>
+
+/* 🔥 PALETA */
+:root {
+  --preto: #0f0f0f;
+  --cinza-escuro: #1f1f1f;
+  --cinza: #6b7280;
+  --cinza-claro: #e5e7eb;
+  --vermelho: #dc2626;
+  --vermelho-hover: #b91c1c;
+}
+
+/* BODY */
+body {
+  background-color: #ffffff;
+  color: var(--preto);
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background: var(--preto);
+  border-bottom: 2px solid var(--vermelho);
+}
+
+header h1 {
+  color: var(--vermelho);
+  letter-spacing: 1px;
+}
+
+/* BOTÕES */
+.btn-red {
+  background: var(--vermelho);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+  background: var(--vermelho-hover);
+}
+
+.btn-dark {
+  background: var(--cinza-escuro);
+  color: white;
+}
+
+.btn-light {
+  background: white;
+  color: black;
+  border: 1px solid var(--cinza-claro);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+}
+
+/* CLIENTES */
+.clientes {
+  background: var(--cinza-claro);
+}
+
+.logo-box {
+  height: 100px;
+  width: 180px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.logo-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo-box img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/* NOTÍCIAS */
+.card-news {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--cinza-claro);
+  transition: 0.3s;
+}
+
+.card-news:hover {
+  transform: translateY(-5px);
+}
+
+.card-news h3 {
+  color: var(--preto);
+}
+
+.card-news a {
+  color: var(--vermelho);
+  font-weight: bold;
+}
+
+/* FORM */
+form input, form textarea {
+  border: 1px solid var(--cinza-claro);
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: var(--vermelho);
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float img {
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+  transition: 0.3s;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+</style>
